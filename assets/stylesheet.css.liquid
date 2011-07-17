@@ -130,7 +130,7 @@ dd.field-padding {margin-top: 10px;}
 #product-description {float: left; width: 610px;}
 #product-description ul {display: block;}
 #product-description ul li {margin-bottom: 20px;}
-#product-description .original-price {font-size: 16px; color: {{ settings.neutral_color }}; text-shadow: 1px 1px #000000;}
+#product-description .original-price {font-size: 16px; color: {{ settings.neutral_color }}; text-shadow: 1px 1px #aaa;}
 #product-description .current-price {float: left; font-size: 22px; color: {{ settings.highlight_color }}; text-shadow: 1px 1px #000000; margin-top: 10px;}
 #product-description #purchase {float: right;}
 #product-description h2.title {font-size:16px; color: {{ settings.alternate_color }}; margin-bottom: 18px; font-weight: normal;}
@@ -210,7 +210,7 @@ a.rss-icon img {margin: 0 10px -2px 0;}
 
 #full-width {width: 900px; padding: 0 30px;}
 #full-width h2 {font-size: 18px; font-weight: normal; color: {{ settings.alternate_color }}; text-shadow: 1px 1px #000000; margin: 0 0 30px 0;}
-#full-width h3 {font-size: 16px; font-weight: normal; color: {{ settings.neutral_color }}; text-shadow: 1px 1px #000000; margin: 0 0 15px 0;}
+#full-width h3 {font-size: 16px; font-weight: normal; color: {{ settings.neutral_color }}; text-shadow: 1px 1px #aaa; margin: 0 0 15px 0;}
 #full-width h4 {font-size: 15px; font-weight: normal; color: {{ settings.highlight_color }}; text-shadow: 1px 1px #000000; margin: 0 0 15px 0;}
 #full-width h5 {font-size: 14px; font-weight: bold; color: {{ settings.body_color }}; text-shadow: 1px 1px #000000; margin: 0 0 15px 0;}
 #full-width a {color: {{ settings.highlight_color }};}
@@ -283,12 +283,14 @@ body {
 #header-wrapper { width: 100%; }
 #content-wrapper { width: 100%; }
 
-#logo {float: left; margin: 65px 0 0 20px;}
+#logo {float: left; margin: 65px 0 0 17px;}
+#toolbar {margin: 66px 14px 0 0;}
 
 #main-navigation {
   position: absolute;
   top: 142px;
   width: 980px;
+  height: 140px;
   background: url(http://www.oliveto.com/communitygrains/wp-content/themes/communitygrains/red-ribbon-menu-bar.png) top left no-repeat;
 }
 
@@ -305,19 +307,10 @@ body {
   text-shadow: none;
   padding: 10px 10px 0 10px;
   background: none;
-/*
-  color: white;
-  margin-right: 5px;
-  background: #000;
-  height: 30px;
-  text-transform: uppercase;
+}
 
-  -moz-border-radius: 6px 6px 0 0;
-  -webkit-border-top-left-radius: 6px;
-  -webkit-border-top-right-radius: 6px;
-  -webkit-border-bottom-left-radius: 0;
-  -webkit-border-bottom-right-radius: 0;
-*/
+a:hover {
+  color: black;
 }
 
 #main-navigation ul li a {
@@ -347,12 +340,25 @@ body {
   color: white;
 }
 
+#full-width {
+  padding: 0 20px;
+}
 
-#content-wrapper {
-  background-color: #F5F0D5;
+#content-wrapper,
+#footer,
+#colophon {
+  background: url(http://www.oliveto.com/communitygrains/wp-content/themes/communitygrains/burlap-background4.jpg) top left repeat;
+}
+
+#colophon {
+  margin: -37px 0 0 20px;
 }
 
 #home-banner-wrapper-no-banner {
   border-top: solid 1px black;
+}
+
+#featured-products h3.featured-products-title {
+  text-shadow: none;
 }
 
